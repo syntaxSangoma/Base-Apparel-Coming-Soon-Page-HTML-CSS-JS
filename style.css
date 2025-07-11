@@ -81,7 +81,7 @@ html {
 body {
   min-height: 100vh;
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: var(--BODY-GRAD);
   background-repeat: no-repeat;
   display: flex;
@@ -113,7 +113,7 @@ h2 {
 }
 
 .header__mobile-hero img {
-  max-width: 376px;
+  max-width: 100%;
 }
 
 .main-content {
@@ -208,6 +208,7 @@ input[type="email"]:focus {
 @media screen and (min-width: 992px) {
   body {
     flex-flow: row;
+    overflow: hidden;
   }
 
   .section-wrapper {

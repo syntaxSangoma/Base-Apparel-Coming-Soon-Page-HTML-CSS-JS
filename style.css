@@ -84,9 +84,6 @@ body {
   overflow-x: hidden;
   background-image: var(--BODY-GRAD);
   background-repeat: no-repeat;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
 }
 
 h1,
@@ -113,7 +110,7 @@ h2 {
 }
 
 .header__mobile-hero img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .main-content {
@@ -207,6 +204,8 @@ input[type="email"]:focus {
 /* Desktop */
 @media screen and (min-width: 992px) {
   body {
+    display: flex;
+    align-items: center;
     flex-flow: row;
     overflow: hidden;
   }
